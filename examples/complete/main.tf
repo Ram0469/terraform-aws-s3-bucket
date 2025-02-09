@@ -9,7 +9,7 @@ provider "aws" {
 
 locals {
   bucket_name = "s3-bucket-${random_pet.this.id}"
-  region      = "us-west-2"
+  region      = "us-west-1"
 }
 
 data "aws_caller_identity" "current" {}
