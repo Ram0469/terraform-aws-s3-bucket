@@ -12,6 +12,6 @@ module "account_public_access" {
 
   block_public_acls       = true
   block_public_policy     = true
-  ignore_public_acls      = true
+  ignore_public_acls      = var.ignore_public_acls
   restrict_public_buckets = var.restrict_public_buckets
 }
